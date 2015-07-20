@@ -56,7 +56,7 @@ public class FortuneBook {
         //Randomly select a fact
         Random randomGenerator = new Random(); //construct a new random generator
         int randomNumber = randomGenerator.nextInt(mFortunes.length);
-        fortune = randomNumber+". ";  //+mFortunes[randomNumber];
+        fortune = mFortunes[randomNumber];
         return fortune;
     }
 }
