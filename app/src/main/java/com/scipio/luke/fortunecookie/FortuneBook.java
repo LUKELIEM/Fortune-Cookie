@@ -38,6 +38,15 @@ public class FortuneBook {
             "Your past success will be overshadowed by your future successes.",
             "A financial investment will yield return beyond your wildest hopes.",
             "You will be fortunate in everything you put your hands on.",
+            "Your greatest fortune is the large number of friends you have.",
+            "Your love life will be happy and harmonious.",
+            "Your eyes will be opened to a world full of beauty, charm and adventure.",
+            "Your future will be happy and productive.",
+            "Appearance is deceiving. Remember endurance makes gold.",
+            "Good to begin well. Better to end well.",
+            "Money speaks a language everyone understands.",
+            "All your hard work will soon pay off.",
+            "Don't be afraid to take that big step.",
             "You will find hidden treasures where least expected."};
 
     //Methods (Abilities) - things it can do
@@ -47,8 +56,7 @@ public class FortuneBook {
         //Randomly select a fact
         Random randomGenerator = new Random(); //construct a new random generator
         int randomNumber = randomGenerator.nextInt(mFortunes.length);
-
-        fortune = mFortunes[randomNumber];
+        fortune = randomNumber+". ";  //+mFortunes[randomNumber];
         return fortune;
     }
 }
